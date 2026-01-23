@@ -1,0 +1,33 @@
+Cifrado de Atbash
+
+El cifrado de Atbash es uno de los sistemas criptográficos más antiguos y simples, originario del alfabeto hebreo, 
+donde sustituye cada letra por su opuesta según el alfabeto. Surgió alrededor del siglo VI o V a.C. en Israel, usado 
+principalmente en textos religiosos hebreos para fines simbólicos más que de alta seguridad. 
+
+Especificamente, este un cifrado de sustitución monoalfabética que invierte el alfabeto: la primera letra (A) se cambia
+por la última (Z), la segunda (B) por la penúltima (Y), y así sucesivamente. Para el alfabeto español (A-Z), la clave
+es ZYXWVUTSRQPONMLKJIHGFEDCBA y practicamente el proceso de cifrado y descifrado es el mismo. Por ejemplo el mensaje "Hola"
+se cifra como "SOLZ", en donde cambiamos la H por la S, la O por la L, la L por la O, y la A por la Z. 
+
+El término "Atbash" proviene directamente de las primeras y últimas letras del alfabeto hebreo tradicional, que tiene 
+22 letras (de Alef a Tav). En este cifrado, se invierte el orden, donde la primera letra, Alef, se sustituye por la última, 
+que es Tav, y la segunda, Beth, por la penúltima que es Shin. De esta forma, usando las iniciales de estas pareja de letras,
+se formar el nombre "Atbash", reflejando así el principio del cifrado de espejo en hebreo.
+
+
+¿Por qué se eligí el cifrado Atbash?
+- Elegí el cifrado Atbash porque me llamó la atención que haya sido utilizado en libros y textos hebreos antiguos, más que
+todo como un fin simbólico y no solo como un método de ocultamiento. Me pareció interesante que en contextos religiosos se 
+empleaban técnicas simples de cifrado para disimular ciertos nombres o mensajes. De hecho, se me hizo curioso como un método
+sencillo en un tiempo donde la mayoría de la población no sabía leer, fue una invención suficiente para ocultar información 
+a personas que simplemnte no sabian nada de ello. 
+
+Ventajas
+- No requiere claves secretas ni cálculos, solo invierte el alfabeto, haciendolo accesible para principiantes y reversible
+al instante. También, introduce conceptos de sustitución monoalfabética y análisis de frecuencias de forma clara, siendo ideal
+para mensajes simbólicos con bajo riesgo de errores manuales.
+
+Vulnerabilidades
+- Siento que es vulnerable a análisis de frecuencia, como en el caso de la letra 'E' que es común en el español llega a 
+convertirse en 'V', lo que lo hace detectable en textos largos. Al ser tan sencillo, cualquiera que conozca el alfabeto lo 
+descifra inmediatamente, entonces es inadecuado para seguridad de la vida real.
