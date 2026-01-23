@@ -11,7 +11,6 @@ def binario_a_decimal(binario):
 
     return decimal
 
-# Parte del código de esta función fue creado con ayuda de ChatGPT
 def binario_a_base64(binario):
     binario = binario.replace(" ", "")
 
@@ -31,6 +30,10 @@ def binario_a_base64(binario):
 
         i += 24
 
+    # Prompt del codigo sacado de ChatGPT:
+    # Genera el código para calcular y aplicar correctamente el padding Base64 que hemos
+    # usado dentro de una conversión desde binario, en donde se brinden la cantidad de bytes
+    # originales y agregando '=' o '==' según la cantidad de bytes reales usados
     bytes_originales = len(binario) // 8
     if bytes_originales % 3 == 1:
         resultado = resultado[:-2] + "=="

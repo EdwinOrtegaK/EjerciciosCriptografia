@@ -13,7 +13,6 @@ def decimal_a_binario(numero):
 
     return binario
 
-# Parte del código de esta función fue creado con ayuda de ChatGPT
 def base64_a_binario(texto):
     texto = texto.replace(" ", "").replace("\n", "")
     res = ""
@@ -34,6 +33,11 @@ def base64_a_binario(texto):
                     k += 1
                 vals.append(k)
 
+        # Prompt del codigo sacado de ChatGPT:
+        # Genera el código para reconstruir un bloque de 24 bits a partir de
+        # cuatro valores Base64 (con 6 bits cada uno) con el desplazamientos de los mismos,
+        # y así extraer los bytes originales de 8 bits aplicando corrimientos
+        # teniendo en cuenta el padding que hemos usado
         bloque = (vals[0] << 18) | (vals[1] << 12) | (vals[2] << 6) | vals[3]
 
         res += decimal_a_binario((bloque >> 16) & 255) + " "
